@@ -179,7 +179,7 @@ letterSpacing: "-0.3px",
           whiteSpace: "nowrap",
         }}
       >
-        TEKYDOCT SDN BHD
+        Elite Solutions Pvt Ltd
       </span>
       <img src={companyArrow} alt="arrow" style={{ width: "24px" }} />
     </div>
