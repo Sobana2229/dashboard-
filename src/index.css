@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f8fafc;
+}
+
+/* Allow scroll but hide scrollbar */
+.sidebar {
+  height: 100vh;
+  overflow-y: scroll;          /* scrolling ENABLED */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+.sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.sidebar-collapse-icon {
+  position: absolute;
+
+  /* Position like your screenshot */
+  right: -18px;             /* pushes outside sidebar */
+  top: 50%;                 /* vertically centered */
+  transform: translateY(-50%);
+
+  /* Make sure it is ALWAYS visible */
+  z-index: 999;
+  pointer-events: auto;
+
+  /* Fix size for your full SVG */
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix the SVG itself */
+.sidebar-collapse-icon img,
+.sidebar-collapse-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
